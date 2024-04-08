@@ -20,8 +20,9 @@ def calculate_time(input_time, time_for_credit, credit_amount):
 
   
 
-  
-print(calculate_time(input("How many minutes have you spent? "), 45, 30))
+converted_input_time = int(input("How many hours? ")) * 60 + int(input("How many minutes? "))
+
+print(calculate_time(converted_input_time, 45, 30))
 
 
 
